@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<style>
+    
+    body {
+        margin:0;
+        padding:0;
+    }
+    .google_image {
+        display: block;
+        margin: auto auto;
+        padding: 15% 0px 30px 0px;
+    }
+    .wrapper {
+        position: relative;
+        display: flex;
+        width: 45%;
+        margin: auto
+    }
+    .search-icon{
+        position: absolute;
+        height: 20px;
+        width: auto;
+        top: 12px;
+        left: 12px;
+    }
+    #search {
+        border: 1px solid lightgray;
+        border-radius: 24px;
+        height: 45px;
+        width: 100%;
+        background-color: #ffffff;
+        padding-left: 45px;
+        font-size: 1em;
+    }
+    a {
+        position: relative;
+        font-size: .8em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+    }
+    header {
+        position:absolute;
+        top: 3%;
+        left: 2%;
+        width: 100%;
+    }
+</style>
+<head>
+    <title>Google</title>
+</head>
+<body>
+    <header>
+        <a id="about">About</a>
+        <a id="store">Store</a>
+        <a id="gmail">Gmail</a>
+        <a id="images">Images</a>
+    </header>
+    <img class = "google_image" src="google_image.png" alt="Google Image">
+    <bx>
+    <div class = "wrapper">
+        <img class="search-icon" src="magglass.png">
+        <input type="search" id="search" name="search">
+    </div>
+</body>
