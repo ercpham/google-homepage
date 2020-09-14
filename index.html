@@ -2,19 +2,40 @@
 <style>
     
     body {
-        margin:0;
+        margin:0px;
         padding:0;
     }
     .google_image {
-        display: block;
+        display: flex;
         margin: auto auto;
-        padding: 15% 0px 30px 0px;
+        padding: 200px 0px 30px 0px;
     }
     .wrapper {
         position: relative;
         display: flex;
-        width: 45%;
-        margin: auto
+        width: 584px;
+        margin: auto;
+    }
+    .button_wrapper {
+        position: relative;
+        display: flex;
+        width: 400px;
+        margin: auto;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    button {
+        position: relative;
+        display: flex;
+        background: transparent;
+        border: 0px solid transparent;
+        box-shadow: 0px 0px 0px transparent;
+        background-color: #f5f5f5;
+        border-radius: 4px;
+        padding: 8px 17px 8px 17px;
+        margin: 0px 5px;
+        color: #525252;
+        font-size: 14px;
     }
     .search-icon{
         position: absolute;
@@ -39,10 +60,61 @@
         color: gray;
     }
     header {
-        position:absolute;
-        top: 3%;
-        left: 2%;
+        position: absolute;
+        top: 0px;
+        padding: 0px 20px;
         width: 100%;
+        box-sizing: border-box;
+    }
+    footer {
+        position: absolute;
+        bottom: 0px;
+        padding: 0px 20px;
+        width: 100%;
+        font-size: 18px;
+        background-color: rgb(240, 240, 240);
+        overflow: hidden;
+        box-sizing: border-box;
+        border-top-color: rgb(219, 219, 219);
+        border-top-width: 1px;
+        border-top-style:solid
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: #4a4a4a;
+        text-decoration: none;
+        padding: 25px 12px;
+    }
+
+    li img {
+        display: block;
+        padding: 25px 12px;
+        margin-top: -8px;
+    }
+
+    footer li a {
+        padding: 12px 12px;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+    .dot {
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        background-color: #bbb;
+        border-radius: 50%;
+        margin: 17px 8px;
     }
 </style>
 <head>
@@ -50,15 +122,35 @@
 </head>
 <body>
     <header>
-        <a id="about">About</a>
-        <a id="store">Store</a>
-        <a id="gmail">Gmail</a>
-        <a id="images">Images</a>
+        <ul>
+            <li><a id="about" href="">About</a></li>
+            <li><a id="store" href="">Store</a></li>
+            <li style="float:right"><span class="dot"></span></li>
+            <li style= "float:right"><img id="squares" src="squares.png"></li>
+            <li style = "float:right"><a id="images" href="">Images</a></li>
+            <li style = "float:right"><a id="gmail" href="">Gmail</a></li>
+        </ul>
     </header>
-    <img class = "google_image" src="google_image.png" alt="Google Image">
-    <bx>
-    <div class = "wrapper">
-        <img class="search-icon" src="magglass.png">
-        <input type="search" id="search" name="search">
+    <div class = "content">
+        <img class = "google_image" src="google_image.png" alt="Google Image">
+        <bx>
+        <div class = "wrapper">
+            <img class="search-icon" src="magglass.png">
+            <input type="search" id="search" name="search">
+        </div>
+        <div class = "button_wrapper">
+            <button type="button">Google Search</button>
+            <button type="button">I'm Feeling Lucky</button>
+        </div>
     </div>
+    <footer>
+        <ul>
+            <li><a href="">Advertising</a></li>
+            <li><a href="">Business</a></li>
+            <li><a href="">How Search Works</a></li>
+            <li style="float:right"><a href="">Settings</a></li>
+            <li style="float:right"><a href="">Terms</a></li>
+            <li style="float:right"><a href="">Privacy</a></li>
+        </ul>
+    </footer>
 </body>
